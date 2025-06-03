@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="arcade-machine">
+        <h1>ROCK PAPER SCISSORS</h1>
+        
+        <div class="marquee">
+            ★★★ PLAYER 1 ★★★ HIGH SCORE: 9999 ★★★ INSERT COIN ★★★
+        </div>
+        
+        <div class="screen">
+            <div class="game-area">
+                <div class="countdown" id="countdown">3</div>
+                <div class="hands-container">
+                    <div class="hands" id="hands">
+                        <div class="player-hand">
+                            <div class="hand" id="player-hand">✊</div>
+                            <div class="hand-label">PLAYER</div>
+                        </div>
+                        <div class="computer-hand">
+                            <div class="hand" id="computer-hand">✊</div>
+                            <div class="hand-label">CPU</div>
+                        </div>
+                    </div>
+                    <div class="vs" id="vs">VS</div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class="choice" data-choice="rock">✊</div>
+                <div class="choice" data-choice="paper">✋</div>
+                <div class="choice" data-choice="scissors">✌️</div>
+            </div>
+            
+            <div id="result">CHOOSE YOUR WEAPON!</div>
+            
+            <div class="scoreboard">
+                <div class="score">
+                    <div>PLAYER</div>
+                    <div class="score-value" id="player-score">0</div>
+                </div>
+                <div class="score">
+                    <div>CPU</div>
+                    <div class="score-value" id="computer-score">0</div>
+                </div>
+            </div>
+            
+            <div class="difficulty">
+                <button class="difficulty-btn active" data-difficulty="easy">EASY</button>
+                <button class="difficulty-btn" data-difficulty="medium">MEDIUM</button>
+                <button class="difficulty-btn" data-difficulty="hard">HARD</button>
+            </div>
+            
+            <button id="reset">RESET GAME</button>
+        </div>
+    </div>
+    
+    <div class="credit">
+        ARCADE GAME • 2024 • PRESS START TO PLAY
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
